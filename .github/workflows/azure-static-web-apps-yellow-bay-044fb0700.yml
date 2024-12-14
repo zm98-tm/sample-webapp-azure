@@ -3,7 +3,7 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - main  # Change to your default branch if needed
+      - main  # Adjust if your default branch is different
 
 jobs:
   build-and-deploy:
@@ -17,6 +17,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          app_location: '/'             # Path to your HTML files
-          output_location: '/'          # No build output folder
-          app_build_command: ''         # Skip build step
+          action: 'upload'                 # Ensure this is included
+          app_location: '/'                # Path to your HTML files
+          output_location: '/'             # No build output folder
+          app_build_command: ''            # Skip build step
