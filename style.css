@@ -6,7 +6,7 @@
 .top{
     width: 100%;
     height: 100vh;
-    background-image: url("[Insert Storage Account Link]");
+    background-image: url("https://YOUR_STORAGE_ACCOUNT.blob.core.windows.net/YOUR_CONTAINER/splunk.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -26,19 +26,16 @@
     text-decoration: none;
     color: rgb(10, 9, 9);
 }
-
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-
 .navbar ul li a{
     text-decoration: none;
     color: black;
 }
-
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -48,13 +45,10 @@
     left: 0;
     bottom: -10px;
     transition: 0.6s;
-
 }
-
 .navbar ul li:hover::after{
     width: 100%;
 }
-
 .content{
     width: 100%;
     color: black;
@@ -62,19 +56,15 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-
 }
-
 .content h1{
     margin-top: 80px;
     font-size: 70px;
 }
-
 .content p{
     margin-top: 20px auto;
     line-height: 25px;
 }
-
 button{
     width: 200px;
     padding: 15px 0;
@@ -82,14 +72,12 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     border: 2px solid #f386bb;
-
     background: transparent;
     color: rgb(31, 30, 30);
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
-
 span{
     position: absolute;
     left: 0;
@@ -100,66 +88,44 @@ span{
     border-radius: 25px;
     z-index: -1;
     transition: 0.5s;
-
 }
-
 button:hover span{
     width: 100%;
 }
-
 button:hover{
     border: none;
 }
-
-
-.footer{
-    padding: 20px 9%;
-    text-transform: capitalize;
-    transition: 0.2s linear;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.footer .box-container{
+.container{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
 }
-
-.footer .box-container .box{
-    flex:1 1 250px;
-
-}
-
-
-.footer .box-container .box h3{
-   color: #333;
-   font-size: 25px;
-   padding: 10px 0;
-    
-}
-.footer .box-container .box a {
-    display: block;
-    color:#666;
-    font-size: 15px;
-    padding: 10px 0;
-	text-decoration:none;
-     
- }
- .footer .box-container .box a:hover {
-    text-decoration: underline;
-    color:#e84393;
-   
- }
-
- .footer .credit{
+.bootcamp{
+    flex: 1 1 30%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
     text-align: center;
-    padding-left: 30%;
-    margin-top: 15px;
-    padding-top: 25px;
-    font-size: 20px;
-    color: #333;
-    border-top: 1ps solid rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
-
+.bootcamp:hover {
+    transform: scale(1.05);
+}
+.bootcamp img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    background: #0078D4;
+    color: white;
+    text-align: center;
+}
